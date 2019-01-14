@@ -33,15 +33,15 @@ def sum_array(array)
 end
 
 def add_s(array)
-  #s_array = []
+  s_array = []
   array.each_with_index.collect do |elem, index|  
     if index != 1
-      elem + "s" 
+      s_array << elem + "s" 
     else
-      elem 
+      s_array << elem 
 end
 end
-array
+s_array
 end
 
 
